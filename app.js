@@ -110,7 +110,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  console.log(testArray);
+  var timesArray = multiply(testArray[0],testArray[1])[0];
+  var arrayTotal = multiply(timesArray,testArray[2])[0];
+  console.log(testArray);
+  return [arrayTotal, 'The numbers ' + testArray + ' have a product of ' + arrayTotal + '.'];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
